@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://backend-6bkk.onrender.com',
 });
 
 export const getFeedback = (response) => API.post('/feedback', { response });
